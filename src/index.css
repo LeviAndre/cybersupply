@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Roboto+Mono:wght@100;300&display=swap');
+
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +9,62 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #000015;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+h1{
+  font-family: 'Anton', sans-serif;
+
+  letter-spacing: 5px;
+  color: white;
+  font-size: 128px;
+  padding-top: 250px;
+  padding-left: 180px;
+  margin: 0px;
+}
+
+h1:before {
+  content: "";
+  display: block;
+  background: url("./assets/img/blueLogo.svg") no-repeat center;
+  background-size: cover;
+  width: 120px;
+  height: 210px;
+  position: absolute;
+  top: 230px;
+  left: 135px;
+  z-index: -1;
+}
+
+h3{
+  font-family: 'Roboto Mono', monospace;
+
+  color: #E7CF00;
+  font-size: 64px;
+  padding-left: 430px;
+  margin: 0px;
+
+  position: absolute;
+  top: 390px;
+}
+
+.banner {
+  width: 100%;
+  height: 1000px;
+  background: url("./assets/img/banner.svg");
+  background-size: cover;
+  position: relative;
+  z-index: -10;
+}
+
+.gradient{
+  padding-top: 458px;
+  width: 100%;
+  height: 150px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%,rgb(00, 00, 20) 60%);
 }
