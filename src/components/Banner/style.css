@@ -13,7 +13,7 @@ h1{
     margin: 0px;
   }
   
-  h1:before {
+/*  h1:before {
     content: "";
     display: block;
     background: url("../../assets/img/blueLogo.svg") no-repeat center;
@@ -24,7 +24,7 @@ h1{
     top: 230px;
     left: 135px;
     z-index: -1;
-  }
+  }*/
   
   h3{
     font-family: 'Roboto Mono', monospace;

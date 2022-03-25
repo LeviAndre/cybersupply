@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import "./style.css";
-import { Title, SubTitle, Container, Gradient } from "./styled.jsx";
-
+import { GreatTitle, SubTitle, Container, Gradient } from "./styled.jsx";
+import name from "../../assets/img/name.svg"
 
 function Banner() {
         return (
             <Container>
-            <Title>CYBER SUPPLY</Title>
+            <GreatTitle src={name}/>
             <SubTitle>So your code fly higher</SubTitle>
             <Gradient></Gradient>
             </Container>

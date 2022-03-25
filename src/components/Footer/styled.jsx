@@ -1,35 +1,38 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-display: flex;
-justify-content: space-around;
-align-itens: center;
-padding-top: 130px;
+    display: flex;
+    justify-content: space-around;
+    align-itens: flex-start;
+    padding-top: 70px;
 
-width: 100%;
-height: 15em;
+    width: 100%;
+    height: 15em;
 
-background: #000007;
+    background: #000005;
 `
 
 export const Item = styled.div`
-    margin: auto;
-    width: 20%;
-    height: 5em;
+    width-max: 10%;
+    height: 10em;
     text-align: center;
-    padding: 2px;
-    margin: 0;
+    padding-bottom: 2px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-itens: center;
+
+    &:nth-child(5) {
+        justify-content: center;
+    }
 `
 
 export const Title = styled.h1`
     padding: 0px;
-    padding-bottm
-    font-size: 20px;
+    padding-bottom: 2px;
+    font-size: 22px;
     font-weight: strong;
+    letter-spacing: 0em;
     color: white;
     font-family: Sans-serif;
 `
@@ -39,10 +42,17 @@ export const List = styled.ul`
     margin: 15px;
 `
 
-export const SubTitle2 = styled.p`
+export const SubTitle2 = styled.button`
     font-size: 20px;
     color: white;
     font-family: Sans-serif;
+
+    background: none;
+    border: none;
+
+    &:hover {
+        cursor: pointer;
+    }
 `
 
 export const Icon = styled.img`
@@ -53,8 +63,16 @@ export const Icon = styled.img`
 `
 
 export const Logo = styled.img`
-margin: 12px 70px 30px 120px;
+    margin: 0px 0px 0px 100px;
 
-width: 320px;
-height: 180px;
+    width: 320px;
+    height: 180px;
+`
+
+export const Divisor = styled.div`
+    display: block;
+    content: "";
+    background: #fff;
+    width: 3px;
+    height: 250px;
 `

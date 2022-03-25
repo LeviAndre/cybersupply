@@ -1,13 +1,5 @@
 import styled from "styled-components";
 
-/*import Helmet from 'react-helmet';
-
-export const Script = props => (
-    <Helmet>
-        <script type="module" src="./script.js"></script>  
-    </Helmet>
-);*/
-
 export const ContainerH = styled.div `
 width: 100%;
 height: 70px;
@@ -56,7 +48,7 @@ color: white;
 font-size: 22px;
 padding: 0px 30px 40px 30px;
 &:hover {
-    border-bottom: 6px, white;
+    border-bottom: 6px white solid;
     cursor: pointer;
 }
 `

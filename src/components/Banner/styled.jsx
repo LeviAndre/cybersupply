@@ -1,29 +1,12 @@
 import styled from "styled-components";
 
 import banner from "../../assets/img/banner.svg";
-import mark from "../../assets/img/blueLogo.svg";
 
-export const Title = styled.h1`
-font-family: 'Anton', sans-serif;
-  
-letter-spacing: -1px;
-color: white;
-font-size: 128px;
+export const GreatTitle = styled.img`
 padding-top: 250px;
-padding-left: 180px;
-margin: 0px;
-&:before {
-    content: "";
-    display: block;
-    background: url(${mark}) no-repeat center;
-    background-size: cover;
-    width: 120px;
-    height: 210px;
-    position: absolute;
-    top: 230px;
-    left: 135px;
-    z-index: -1;
-}
+padding-left: 130px;
+width: 48%;
+height: 220px;
 `;
 
 export const SubTitle = styled.h3`
