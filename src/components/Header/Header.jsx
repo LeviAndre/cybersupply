@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import "./style.css";
 import logo from "../../assets/img/logo.svg";
 import { ContainerH, P, Nav, Ul, Li, Btn, Btn2, Logo } from "./styled.jsx"
 

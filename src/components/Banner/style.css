@@ -12,20 +12,6 @@ h1{
     padding-left: 180px;
     margin: 0px;
   }
-  
-/*  h1:before {
-    content: "";
-    display: block;
-    background: url("../../assets/img/blueLogo.svg") no-repeat center;
-    background-size: cover;
-    width: 120px;
-    height: 210px;
-    position: absolute;
-    top: 230px;
-    left: 135px;
-    z-index: -1;
-  }*/
-  
   h3{
     font-family: 'Roboto Mono', monospace;
   

@@ -27,7 +27,32 @@ export const Item = styled.div`
     }
 `
 
+export const CreditTitle = styled.h1`
+    font-family: 'Roboto Mono', monospace;
+
+    padding: 0px;
+    padding-bottom: 6px;
+    font-size: 22px;
+    font-weight: strong;
+    letter-spacing: 0.2em;
+    color: white;
+    font-family: Sans-serif;
+`
+
+export const CreditName = styled.p`
+    font-family: 'Roboto Mono', monospace;
+
+    font-size: 22px;
+    color: white;
+    font-family: Sans-serif;
+
+    background: none;
+    border: none;
+`
+
 export const Title = styled.h1`
+    font-family: 'Roboto Mono', monospace;
+
     padding: 0px;
     padding-bottom: 2px;
     font-size: 22px;
@@ -40,10 +65,14 @@ export const Title = styled.h1`
 export const List = styled.ul`
     padding: 0px;
     margin: 15px;
+    display: flex;
+    align-itens: center;
 `
 
 export const SubTitle2 = styled.button`
-    font-size: 20px;
+    font-family: 'Roboto Mono', monospace;      
+
+    font-size: 18px;
     color: white;
     font-family: Sans-serif;
 
