@@ -1,5 +1,13 @@
 import { SubTitle } from "../Banner/styled.jsx";
-import { Container, Item, Title, SubTitle2, Icon, List, Logo, Divisor } from "./styled.jsx"
+import {    Container, 
+            Item, 
+            Title, 
+            SubTitle2, 
+            Icon, List, 
+            Logo, 
+            Divisor,
+            CreditName,
+            CreditTitle } from "./styled.jsx"
 
 import twitter from "../../assets/img/twitter.svg";
 import facebook from "../../assets/img/facebook.svg";
@@ -11,7 +19,6 @@ import phone from "../../assets/img/phone.svg";
 function Footer() {
     return (
         <Container>
-
                 <Logo src={logo}/>
 
             <Item>
@@ -36,8 +43,8 @@ function Footer() {
                 </Item>
 
             <Item>
-                <Title>Developed by</Title>
-                <SubTitle2>André Levi</SubTitle2>
+                <CreditTitle>Developed by</CreditTitle>
+                <CreditName>André Levi</CreditName>
             </Item>
 
         </Container>

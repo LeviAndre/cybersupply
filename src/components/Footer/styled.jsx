@@ -37,13 +37,29 @@ export const Title = styled.h1`
     font-family: Sans-serif;
 `
 
+export const CreditName = styled.p`
+    font-size: 20px;
+    color: white;
+    font-family: Sans-serif;
+`
+
+export const CreditTitle = styled.h1`
+    letter-spacing: 0.1em;
+    padding: 0px;
+    padding-bottom: 4px;
+    font-size: 22px;
+    font-weight: strong;
+    color: white;
+    font-family: Sans-serif;
+`
+
 export const List = styled.ul`
     padding: 0px;
     margin: 15px;
 `
 
 export const SubTitle2 = styled.button`
-    font-size: 20px;
+    font-size: 18px;
     color: white;
     font-family: Sans-serif;
 
