@@ -1,13 +1,14 @@
-import { TextField, Button } from "./styled.jsx";
+import { TextField, Button, Container } from "./styled.jsx";
 
 function PersonalData() {
     return (
-        <section>
-            <TextField>Name:</TextField>
-            <TextField>Last Name:</TextField>
-            <TextField>Birth Date:</TextField>
-            <TextField>E-mail:</TextField>
-        </section>
+        <Container>
+            <TextField type="text" placeholder="Name" />
+            <TextField type="text" placeholder="Last Name"/>
+            <TextField type="text" placeholder="Birth Date"/>
+            <TextField type="text" placeholder="E-mail"/>
+            <Button>Next</Button>
+        </Container>
     )
 }
 

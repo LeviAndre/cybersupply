@@ -1,4 +1,12 @@
-import { Container, Item, Title, SubTitle2, Icon, List, Logo, Divisor, CreditTitle, CreditName } from "./styled.jsx"
+import {    Container, 
+            Item, 
+            Title, 
+            SubTitle2, 
+            Icon, List, 
+            Logo, 
+            Divisor,
+            CreditName,
+            CreditTitle } from "./styled.jsx"
 
 import twitter from "../../assets/img/twitter.svg";
 import facebook from "../../assets/img/facebook.svg";

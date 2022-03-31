@@ -61,7 +61,6 @@ export const Title = styled.h1`
     color: white;
     font-family: Sans-serif;
 `
-
 export const List = styled.ul`
     padding: 0px;
     margin: 15px;
@@ -71,7 +70,6 @@ export const List = styled.ul`
 
 export const SubTitle2 = styled.button`
     font-family: 'Roboto Mono', monospace;      
-
     font-size: 18px;
     color: white;
     font-family: Sans-serif;
