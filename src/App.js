@@ -1,34 +1,20 @@
 import React, { Component } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import Categories from "./components/Categories/Categories";
-import Banner from "./components/Banner/Banner";
-import Header from "./components/Header/Header";
-import Form from "./components/Register/Form";
-import Footer from "./components/Footer/Footer";
+import Register from "./Pages/Register";
+import Home from "./Pages/Home";
 
 function App() {
+    return (
+      <Router>
+        <Routes>
 
-  const Router = () => {
+          <Route exact path="/" element={<Home/>} />
 
-    const location = window.location.pathname;
+          <Route exact path="/register" element={<Register/>} />
 
-    if(location == '/register'){
-        return <Form />
-    } else {
-        return (
-          <section>
-            <Header />
-            <Banner />
-            <Categories />
-            <Footer />
-          </section>
-        );
-    }
-  }
-      return (
-        <>
-          { Router() }
-        </>
+        </Routes>
+      </Router>
     )
 }
 

@@ -39,7 +39,7 @@ margin-right: 10px;
 padding: 0px;
 `
 
-export const Btn = styled.button`
+export const Btn = styled.a`
 font-family: 'Roboto Mono', monospace;
 
 background: none;
@@ -53,7 +53,7 @@ padding: 0px 30px 40px 30px;
 }
 `
 
-export const Btn2 = styled.button`
+export const Btn2 = styled.a`
 font-family: 'Roboto Mono', monospace;
 
 background: none;

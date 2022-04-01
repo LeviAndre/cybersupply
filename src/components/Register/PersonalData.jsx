@@ -3,10 +3,10 @@ import { TextField, Button, Container } from "./styled.jsx";
 function PersonalData() {
     return (
         <Container>
-            <TextField type="text" placeholder="Name" />
-            <TextField type="text" placeholder="Last Name"/>
-            <TextField type="text" placeholder="Birth Date"/>
-            <TextField type="text" placeholder="E-mail"/>
+            <TextField id="name" type="text" placeholder="Name" />
+            <TextField id="lastName" type="text" placeholder="Last Name"/>
+            <TextField id="birth" type="text" placeholder="Birth Date"/>
+            <TextField id="email" type="text" placeholder="E-mail"/>
             <Button>Next</Button>
         </Container>
     )

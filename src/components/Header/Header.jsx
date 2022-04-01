@@ -19,7 +19,7 @@ function Header() {
                         <Ul>
                             <Li><Btn2>Login</Btn2></Li>
                             <Li><P>/</P></Li>
-                            <Li><Btn2>Register</Btn2></Li>
+                            <Li><Btn2 href="/register" >Register</Btn2></Li>
                         </Ul>
                     </Nav>
 
