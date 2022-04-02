@@ -1,11 +1,32 @@
+import { useState } from "react";
+
 import { TextField, Button, Container } from "./styled.jsx";
 
-function ProfessionalData() {
+function ProfessionalData({onData}) {
+    const [area, setArea] = useState("");
+    const [available, setAvailable] = useState("");
+    const [nickname, setNickname] = useState("");
+
     return (
-        <Container>
-            <TextField id="area" type="text" placeholder="Area" />
-            <TextField id="available" type="text" placeholder="Available"/>
-            <TextField id="nickname" type="text" placeholder="Nickname"/>
+        <Container onSubmit={(event) => {
+            event.preventDefault();
+            onData({area, available, nickname});
+        }}>
+            <TextField            
+            value={area}
+            onChange={(event) =>{ setArea(event.target.value)}}
+            id="area" type="text" placeholder="Area" />
+
+            <TextField             
+            value={available}
+            onChange={(event) =>{ setAvailable(event.target.value)}}
+            id="available" type="text" required placeholder="Available"/>
+
+            <TextField             
+            value={nickname}
+            onChange={(event) =>{ setNickname(event.target.value)}}
+            id="nickname" type="text" required placeholder="Nickname"/>
+
             <Button>Next</Button>
         </Container>
     )

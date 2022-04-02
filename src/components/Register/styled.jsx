@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import styled from "styled-components";
 
-export const Container = styled.div`
+export const Container = styled.form`
     width: 40%;
     min-height: 600px;
     margin: 0 auto;
