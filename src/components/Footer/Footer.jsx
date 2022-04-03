@@ -26,22 +26,19 @@ function Footer() {
                 <Divisor/>
             </Item>
 
-                <Item>
-                    <li>
-                        <List><Title>Social Medias</Title></List>
-                        <List><Icon src={facebook}/><SubTitle2>Facebook</SubTitle2></List>
-                        <List><Icon src={instagram}/><SubTitle2>Instagram</SubTitle2></List>
-                        <List><Icon src={twitter}/><SubTitle2>Twitter</SubTitle2></List>
-                    </li>
-                </Item>
+            <Item>
+                <Title>Social Medias</Title>
+                <List><Icon src={facebook}/><SubTitle2>Facebook</SubTitle2></List>
+                <List><Icon src={instagram}/><SubTitle2>Instagram</SubTitle2></List>
+                <List><Icon src={twitter}/><SubTitle2>Twitter</SubTitle2></List>
+            </Item>
+            
+            <Item>
+                <Title>Contact</Title>
+                <List><Icon src={phone}/><SubTitle2>+55 11 99484-8357</SubTitle2></List>
+                <List><Icon src={email}/><SubTitle2>cybersupply@contact.com</SubTitle2></List>
+            </Item>
 
-                <Item>
-                    <li>
-                        <List><Title>Contact</Title></List>
-                        <List><Icon src={phone}/><SubTitle2>+55 11 99484-8357</SubTitle2></List>
-                        <List><Icon src={email}/><SubTitle2>cybersupply@contact.com</SubTitle2></List>
-                    </li>
-                </Item>
 
             <Item>
                 <CreditTitle>Developed by</CreditTitle>

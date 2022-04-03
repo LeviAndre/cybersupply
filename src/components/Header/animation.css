@@ -1,0 +1,9 @@
+.backdrop {
+    background: #000020;
+    opacity: 0;
+    transition: opacity 0.75s ease-in-out;
+}
+
+.black {
+    opacity: 1;
+}

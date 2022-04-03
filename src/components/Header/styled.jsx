@@ -1,75 +1,105 @@
 import styled from "styled-components";
 
 export const ContainerH = styled.div `
-width: 100%;
-height: 70px;
+    width: 100%;
+    height: 110px;
 
-position: fixed;
-top: 0;
-z-index: 10;
+    position: fixed;
+    top: 0;
+    z-index: 11;
 
-display: flex;
-flex-direction: flex-start;
+    display: flex;
+    flex-direction: flex-start;
+`
+
+export const ContainerVisibility = styled.div `   
+    width: 0%;
+    height: 110px;
+
+    position: fixed;
+    top: 0;
+    z-index: 10;
+
+    background: #000020;
+    opacity: 70%;
+    z-index: 10;
 `
 
 export const P = styled.p`
-font-family: 'Roboto Mono', monospace;
-color: white;
-font-size: 22px;
-padding: 0px;
-margin: 0px;
+    font-family: 'Roboto Mono', monospace;
+    color: white;
+    font-size: 22px;
+
+    position: absolute;
+    z-index: 11;
+
+
+    padding: 0px;
+    margin: 0px;
 `
 
 export const Nav = styled.div`
-width: 75%;
-display: flex;
-justify-content: space-between;
+    width: 75%;
+
+    display: flex;
+    justify-content: space-between;
+    z-index: 11;
 `
 
 export const Ul = styled.ul`
-list-style-type: none;
-display: flex;
-margin-top: 40px;
-padding: 0px;
+    list-style-type: none;
+
+    display: flex;
+
+    margin-top: 40px;
+    padding: 0px;
 `
 
 export const Li = styled.li`
-margin-top: 0px;
-margin-right: 10px;
-padding: 0px;
+    margin-top: 0px;
+    margin-right: 10px;
+    padding: 0px;
 `
 
 export const Btn = styled.a`
-font-family: 'Roboto Mono', monospace;
+    font-family: 'Roboto Mono', monospace;
+    text-decoration-line: none;
+    color: white;
+    font-size: 22px;
 
-background: none;
-border: none; 
-color: white;
-font-size: 22px;
-padding: 0px 30px 40px 30px;
-&:hover {
-    border-bottom: 6px white solid;
-    cursor: pointer;
-}
+    background: none;
+    border: none; 
+
+    padding: 0px 30px 40px 30px;
+
+    &:hover {
+        border-bottom: 6px white solid;
+        cursor: pointer;
+    }
 `
 
 export const Btn2 = styled.a`
-font-family: 'Roboto Mono', monospace;
+    font-family: 'Roboto Mono', monospace;
+    text-decoration-line: none;
+    color: white;
+    font-size: 22px;
 
-background: none;
-border: none; 
-color: white;
-font-size: 22px;
-padding: 0;
-&:hover {
-    cursor: pointer;
-}
+    background: none;
+    border: none; 
+
+    padding: 0;
+
+    &:hover {
+        cursor: pointer;
+    }
 `
 
 export const Logo = styled.img`
-margin: 12px 100px 40px 170px;
+    margin: 12px 100px 40px 170px;
 
-width: 160px;
-height: 90px;
+    width: 160px;
+    height: 90px;
+
+    z-index: 11;
 `
 

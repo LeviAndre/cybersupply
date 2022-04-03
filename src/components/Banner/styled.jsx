@@ -1,38 +1,95 @@
 import styled from "styled-components";
 
-import banner from "../../assets/img/banner.svg";
+import banner from "../../assets/img/banner.png";
 
 export const GreatTitle = styled.img`
-padding-top: 250px;
-padding-left: 130px;
-width: 48%;
-height: 220px;
+    width: 48%;
+    height: 220px;
+
+    padding-top: 250px;
+    padding-left: 130px;
+
+    z-index: 20;
 `;
 
 export const SubTitle = styled.h3`
-font-family: 'Roboto Mono', monospace;
-  
-color: #E7CF00;
-font-size: 64px;
-padding-left: 430px;
-margin: 0px;
+    font-family: 'Roboto Mono', monospace;
+    color: #E7CF00;
+    font-size: 64px;
 
-position: absolute;
-top: 390px;
+    position: absolute;
+    top: 420px;
+
+    padding-left: 430px;
+    margin: 0px;
+
+    z-index: 20;
 `;
 
-export const Container = styled.div`
-width: 100%;
-height: 1000px;
-background: url(${banner});
-background-size: cover;
-position: relative;
-z-index: -10;
+export const BannerContainer = styled.div`
+    width: 100%;
+    height: 1000px;
+
+    background: url(${banner});
+    background-size: cover;
+    z-index: -10;
 `;
 
 export const Gradient = styled.div`
-padding-top: 458px;
-width: 100%;
-height: 150px;
-background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%,rgb(00, 00, 20) 60%);
+    width: 100%;
+    height: 150px;
+
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%,rgb(00, 00, 30) 60%);
+
+    padding-top: 458px;
 `;
+
+export const FirstCode = styled.img`
+    width: 1600px;
+    height: 160px;
+    opacity: 80%;
+
+    position: absolute;
+    top: 580px;
+    left: -100px;
+`
+
+export const SecondCode = styled.img`
+    width: 1000px;
+    height: 160px;
+    opacity: 80%;
+
+    position: absolute;
+    top: 300px;
+    left: 1100px;
+`
+
+export const ThirdCode = styled.img`
+    width: 1200px;
+    height: 200px;
+    opacity: 80%;
+
+    position: absolute;
+    top: 40px;
+    left: -200px;
+`
+
+export const FourthCode = styled.img`
+    width: 800px;
+    height: 160px;
+    opacity: 80%;
+
+    position: absolute;
+    top: 220px;
+    left: 1300px;
+`
+
+export const FifthCode = styled.img`
+    width: 1200px;
+    height: 160px;
+    opacity: 80%;
+
+    position: absolute;
+    top: 460px;
+    left: -180px;
+`

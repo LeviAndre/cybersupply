@@ -1,0 +1,8 @@
+.writer {
+    animation: fade 1s ease-in-out infinite alternate;
+
+    @keyframes fade {
+        0%,100% { opacity: 0 }
+        50% { opacity: 1 }
+      }
+}
