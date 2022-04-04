@@ -6,23 +6,20 @@ export const ContainerH = styled.div `
 
     position: fixed;
     top: 0;
-    z-index: 11;
+    z-index: 15;
 
     display: flex;
     flex-direction: flex-start;
 `
 
 export const ContainerVisibility = styled.div `   
-    width: 0%;
+    width: 100%;
     height: 110px;
 
     position: fixed;
     top: 0;
-    z-index: 10;
 
-    background: #000020;
-    opacity: 70%;
-    z-index: 10;
+    z-index: 14;
 `
 
 export const P = styled.p`
@@ -31,7 +28,7 @@ export const P = styled.p`
     font-size: 22px;
 
     position: absolute;
-    z-index: 11;
+    z-index: 15;
 
 
     padding: 0px;
@@ -43,7 +40,7 @@ export const Nav = styled.div`
 
     display: flex;
     justify-content: space-between;
-    z-index: 11;
+    z-index: 15;
 `
 
 export const Ul = styled.ul`
@@ -100,6 +97,6 @@ export const Logo = styled.img`
     width: 160px;
     height: 90px;
 
-    z-index: 11;
+    z-index: 15;
 `
 

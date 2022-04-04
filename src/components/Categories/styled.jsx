@@ -4,8 +4,8 @@ export const Container = styled.div`
     position: relative;
     top: -200px;
 
-    padding: 50px 100px 100px 150px;
 
+    padding: 50px 100px 100px 150px;
     display: flex;
 `
 
@@ -23,25 +23,23 @@ export const AddOn = styled.img`
 
 export const Btn = styled.button`
     font-family: 'Anton', sans-serif;
-    color: white;
-    font-size: 110px;
-
-    background: none;
-    border: 5px #000040 solid;
-
     min-width: 100px;
     min-height: 100px;
-    
+    border: 5px #000060 solid;
+
+    background: none;
+    color: white;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 
+    font-size: 110px;
 
     margin: 15px;
     padding: 0px 40px 0px 40px;
-
     &:hover {
         cursor: pointer;
+        border: 5px #000090 solid;
     }
 `
 

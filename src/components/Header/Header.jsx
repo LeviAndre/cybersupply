@@ -10,7 +10,7 @@ function Header() {
     return (
         <ContainerH>
 
-            <ContainerVisibility className="backdrop"/>
+            <ContainerVisibility id="head"/>
 
             <Logo src={logo} alt="Cyber Supply"/>
 
@@ -24,7 +24,7 @@ function Header() {
                 <Ul>
                     <Li><Btn2 href="#">Login</Btn2></Li>
                     <Li><P>/</P></Li>
-                    <Li><Btn2 href="/register" >Register</Btn2></Li>
+                    <Li><Btn2 href="/register" > Register</Btn2></Li>
                 </Ul>
             </Nav>
 
@@ -32,21 +32,19 @@ function Header() {
     )
 }
 
-// // Get Scroll Position
-// let prlx = document.getElementById("prlx");
-
-// prlx.onscroll = function prlxAnimation() {
-//  let scrollPos = prlx.scrollTop;
-//  let header = document.getElementById("backdrop");
-//  // document.getElementById ("pos").innerHTML = y + "px"
- 
-//  if(scrollPos > 10){
-//         header.classList.add("black");
-//     }
-//     else {
-//         header.classList.remove("black");
-//     }
- 
-// }
+function resizeHeaderOnScroll() {
+    const distanceY = window.pageYOffset || document.documentElement.scrollTop,
+    shrinkOn = 200,
+    headerEl = document.getElementById('head');
+    
+    if (distanceY > shrinkOn) {
+      headerEl.classList.add("black");
+    } else {
+      headerEl.classList.remove("black");
+    }
+  }
+  
+  window.addEventListener('scroll', resizeHeaderOnScroll);
+  
 
 export default Header;

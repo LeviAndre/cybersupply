@@ -1,9 +1,11 @@
-.backdrop {
+.head {
     background: #000020;
-    opacity: 0;
-    transition: opacity 0.75s ease-in-out;
+    opacity: 0%;
 }
 
 .black {
-    opacity: 1;
+    background: #000020;
+    opacity: 85%;
+    transition: opacity 2s
+
 }

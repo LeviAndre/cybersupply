@@ -2,6 +2,8 @@ import styled from "styled-components";
 
 import banner from "../../assets/img/banner.png";
 
+const opacity = "75%";
+
 export const GreatTitle = styled.img`
     width: 48%;
     height: 220px;
@@ -23,7 +25,7 @@ export const SubTitle = styled.h3`
     padding-left: 430px;
     margin: 0px;
 
-    z-index: 20;
+    z-index: 12;
 `;
 
 export const BannerContainer = styled.div`
@@ -47,7 +49,7 @@ export const Gradient = styled.div`
 export const FirstCode = styled.img`
     width: 1600px;
     height: 160px;
-    opacity: 80%;
+    opacity: ${opacity};
 
     position: absolute;
     top: 580px;
@@ -57,7 +59,7 @@ export const FirstCode = styled.img`
 export const SecondCode = styled.img`
     width: 1000px;
     height: 160px;
-    opacity: 80%;
+    opacity: ${opacity};
 
     position: absolute;
     top: 300px;
@@ -67,7 +69,7 @@ export const SecondCode = styled.img`
 export const ThirdCode = styled.img`
     width: 1200px;
     height: 200px;
-    opacity: 80%;
+    opacity: ${opacity};
 
     position: absolute;
     top: 40px;
@@ -77,7 +79,7 @@ export const ThirdCode = styled.img`
 export const FourthCode = styled.img`
     width: 800px;
     height: 160px;
-    opacity: 80%;
+    opacity: ${opacity};
 
     position: absolute;
     top: 220px;
@@ -87,7 +89,7 @@ export const FourthCode = styled.img`
 export const FifthCode = styled.img`
     width: 1200px;
     height: 160px;
-    opacity: 80%;
+    opacity: ${opacity};
 
     position: absolute;
     top: 460px;

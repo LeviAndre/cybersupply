@@ -24,7 +24,7 @@ function Banner() {
                 <Gradient></Gradient>
 
                 <FirstCode className="layer" data-speed="6" src={consoleLog}/>
-                <SecondCode className="layer" data-speed="8" src={express}/>
+                <SecondCode className="layer" data-speed="15" src={express}/>
                 <ThirdCode className="layer" data-speed="8" src={commit}/>
                 <FourthCode className="layer" data-speed="13" src={selectDB}/>
                 <FifthCode className="layer" data-speed="13" src={importR}/>
