@@ -2,22 +2,44 @@ import { useEffect, useState } from "react";
 import AccountData from "./AccountData";
 import PersonalData from "./PersonalData"
 import ProfessionalData from "./ProfessionalData";
-import Registered from "./Registered";
-import { Text } from "./styled.jsx"
+
+import { BannerContainer } from "../Banner/styled.jsx";
+
+import { Container, Text, ReturnModal, TitleText, Button, AButton } from "./styled.jsx";
 
 function Form({ onData, CPFvalidate }) {
     const [currentStage, setCurrentStage] = useState(0);
     const [pickedData, setPickedData] = useState({});
+    
+    const returnData = 
+    <>
+        <ReturnModal>
+            <li>Name: {pickedData.name}</li>
+            <li>Last Name: {pickedData.lastName}</li>
+            <li>Birth Date: {pickedData.birth}</li>
+            <li>E-mail: {pickedData.email}</li>
 
-    useEffect(()=>{
-        console.log(pickedData);
-    })
+            <li>Area: {pickedData.area}</li>
+            <li>Available: {pickedData.available}</li>
+            <li>Nickname: {pickedData.nickname}</li>
+
+            <li>Phone: {pickedData.phone}</li>
+        </ReturnModal>
+    </>
+
+    const registered = 
+    <Container>
+        <TitleText>thx for submit</TitleText>
+        <Text>{returnData}</Text>
+        <Text>So we are done?</Text>
+        <AButton href="/">Sure!</AButton>
+    </Container>
 
     const currentForm = [
     <PersonalData onData={pickingData} />,
     <ProfessionalData onData={pickingData} />,
     <AccountData onData={pickingData} />,
-    <><Registered /> <Text>pintao da silva</Text></>
+    <>{registered}</>
     ];
 
     function pickingData(data) {
@@ -25,9 +47,11 @@ function Form({ onData, CPFvalidate }) {
         next();
     }
 
+
     function next(){
             setCurrentStage(currentStage+1);
     }
+
 
     return <>{currentForm[currentStage]}</>;
 

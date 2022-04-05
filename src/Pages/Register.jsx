@@ -1,15 +1,16 @@
 import Form from "../components/Register/Form.jsx";
 import Footer from "../components/Footer/Footer";
-import Header from "../components/Header/Header";
+import HeaderFixed from "../components/Header/HeaderFixed";
+import { BannerContainer } from "../components/Banner/styled.jsx";
 
 
 function Register() {
     return (
-        <>
-            <Header />
+        <BannerContainer>
+            <HeaderFixed />
             <Form />
             <Footer />
-        </>
+        </BannerContainer>
     )
 }
 

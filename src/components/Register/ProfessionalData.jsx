@@ -9,7 +9,7 @@ function ProfessionalData({onData}) {
     const [nickname, setNickname] = useState("");
 
     return (
-        <BannerContainer>
+        <>
             <Container onSubmit={(event) => {
                 event.preventDefault();
                 onData({area, available, nickname});
@@ -31,7 +31,7 @@ function ProfessionalData({onData}) {
 
                 <Button>Next</Button>
             </Container>
-        </BannerContainer>
+        </>
     )
 }
 

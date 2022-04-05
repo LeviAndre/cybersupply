@@ -10,17 +10,19 @@ function PersonalData({onData}) {
     const [email, setEmail] = useState("");
 
     return (
-        <BannerContainer>
+        <>
             <Container onSubmit={(event) => {
                 event.preventDefault();
                 onData({name, lastName, birth, email});
             }}>
-                <TextField            
+                <TextField
+                style={{ width: '25%' }}            
                 value={name}
                 onChange={(event) =>{ setName(event.target.value)}}
                 id="name" type="text" required placeholder="Name" />
 
-                <TextField            
+                <TextField      
+                style={{ width: '25%' }}            
                 value={lastName}
                 onChange={(event) =>{ setLastName(event.target.value)}} 
                 id="lastName" type="text" required placeholder="Last Name"/>
@@ -37,7 +39,7 @@ function PersonalData({onData}) {
 
                 <Button>Next</Button>
             </Container>
-        </BannerContainer>
+        </>
     )
 }
 

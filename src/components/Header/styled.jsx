@@ -12,6 +12,18 @@ export const ContainerH = styled.div `
     flex-direction: flex-start;
 `
 
+export const ContainerF = styled.div `
+    width: 100%;
+    height: 110px;
+
+    position: absolute;
+
+    background: #000020;
+
+    display: flex;
+    flex-direction: flex-start;
+`
+
 export const ContainerVisibility = styled.div `   
     width: 100%;
     height: 110px;

@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { BannerContainer } from "../Banner/styled.jsx";
+import Header from "../Header/Header.jsx";
+import { ContainerVisibility } from "../Header/styled.jsx";
 import { TextField, Button, Container } from "./styled.jsx";
 
 function AccountData({onData}) {
@@ -7,7 +9,8 @@ function AccountData({onData}) {
     const [password, setPassword] = useState("");
     /*const [erros, setErros] = useState({ password: { passed: true, text: "" } }) adc valicadção*/
     return (
-        <BannerContainer>
+        <>
+
             <Container onSubmit={(event) => {
                 event.preventDefault();
                 onData({phone, password});
@@ -24,7 +27,7 @@ function AccountData({onData}) {
                 
                 <Button>Next</Button>
             </Container>
-        </BannerContainer>
+        </>
     )
 }
 

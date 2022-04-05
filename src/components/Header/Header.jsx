@@ -34,7 +34,7 @@ function Header() {
 
 function resizeHeaderOnScroll() {
     const distanceY = window.pageYOffset || document.documentElement.scrollTop,
-    shrinkOn = 200,
+    shrinkOn = 100,
     headerEl = document.getElementById('head');
     
     if (distanceY > shrinkOn) {
@@ -46,5 +46,16 @@ function resizeHeaderOnScroll() {
   
   window.addEventListener('scroll', resizeHeaderOnScroll);
   
+
+function fixedHeader() {
+    const location = window.location.pathname
+    headerEl = document.getElementById('head');
+
+    if(location === '/register') {
+        headerEl.classList.add("fixed");
+    } else {
+        headerEl.classList.remove("fixed");
+    }
+}
 
 export default Header;

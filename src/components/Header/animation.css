@@ -1,11 +1,12 @@
 .head {
-    background: #000020;
-    opacity: 0%;
 }
 
 .black {
     background: #000020;
     opacity: 85%;
-    transition: opacity 2s
+}
 
+.headerFixed {
+    position: absolute;
+    background: #000020;
 }
