@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { BannerContainer } from "../Banner/styled.jsx";
 
-import { TextField, Button, Container } from "./styled.jsx";
+import { TextField, Button, Container, FormArea } from "./styled.jsx";
 
 function PersonalData({onData}) {
     const [name, setName] = useState("");
@@ -10,7 +10,7 @@ function PersonalData({onData}) {
     const [email, setEmail] = useState("");
 
     return (
-        <>
+        <FormArea>
             <Container onSubmit={(event) => {
                 event.preventDefault();
                 onData({name, lastName, birth, email});
@@ -22,7 +22,7 @@ function PersonalData({onData}) {
                 id="name" type="text" required placeholder="Name" />
 
                 <TextField      
-                style={{ width: '25%' }}            
+                style={{ width: '31%' }}            
                 value={lastName}
                 onChange={(event) =>{ setLastName(event.target.value)}} 
                 id="lastName" type="text" required placeholder="Last Name"/>
@@ -39,7 +39,7 @@ function PersonalData({onData}) {
 
                 <Button>Next</Button>
             </Container>
-        </>
+        </FormArea>
     )
 }
 

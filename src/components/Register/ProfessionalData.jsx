@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { BannerContainer } from "../Banner/styled.jsx";
 
-import { TextField, Button, Container } from "./styled.jsx";
+import { TextField, Button, Container, FormArea } from "./styled.jsx";
 
 function ProfessionalData({onData}) {
     const [area, setArea] = useState("");
@@ -9,7 +9,7 @@ function ProfessionalData({onData}) {
     const [nickname, setNickname] = useState("");
 
     return (
-        <>
+        <FormArea>
             <Container onSubmit={(event) => {
                 event.preventDefault();
                 onData({area, available, nickname});
@@ -31,7 +31,7 @@ function ProfessionalData({onData}) {
 
                 <Button>Next</Button>
             </Container>
-        </>
+        </FormArea>
     )
 }
 

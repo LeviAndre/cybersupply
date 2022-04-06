@@ -5,7 +5,7 @@ import ProfessionalData from "./ProfessionalData";
 
 import { BannerContainer } from "../Banner/styled.jsx";
 
-import { Container, Text, ReturnModal, TitleText, Button, AButton } from "./styled.jsx";
+import { Container, Text, ReturnModal, TitleText, Button, AButton, FormArea } from "./styled.jsx";
 
 function Form({ onData, CPFvalidate }) {
     const [currentStage, setCurrentStage] = useState(0);
@@ -28,12 +28,14 @@ function Form({ onData, CPFvalidate }) {
     </>
 
     const registered = 
-    <Container>
-        <TitleText>thx for submit</TitleText>
-        <Text>{returnData}</Text>
-        <Text>So we are done?</Text>
-        <AButton href="/">Sure!</AButton>
-    </Container>
+    <FormArea>
+        <Container>
+            <TitleText>thx for submit</TitleText>
+            <Text>{returnData}</Text>
+            <Text>So we are done?</Text>
+            <AButton href="/">Sure!</AButton>
+        </Container>
+    </FormArea>
 
     const currentForm = [
     <PersonalData onData={pickingData} />,
