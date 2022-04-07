@@ -5,6 +5,7 @@ import styled from "styled-components";
 export const FormArea = styled.div`
     max-width: 40%;
     min-height: 860px;
+    max-height: 1180px;
 
     margin: 0 auto;
 
@@ -71,18 +72,10 @@ export const Button = styled.button`
 export const AButton = styled.a`
     font-family: 'Roboto Mono',  monospace;
     color: #fff;
-    font-size: 36px;
+    font-size: 24px;
 
-    border-radius: 5px;
-    background: #000040;
-    border: none;
-
-    padding: 5px;
-    margin-left: 500px;
-    
-    width: 120px;
-
-    text-decoration-line: none;
+    margin: 0px;
+    padding: 0px;
 
     &:hover {
         cursor: pointer;
@@ -94,6 +87,9 @@ export const Text = styled.p`
 
     font-size: 24px;
     color: white;
+
+    padding: 10px;
+    margin: 0px;
 `
 
 export const TitleText = styled.p`
@@ -102,15 +98,18 @@ export const TitleText = styled.p`
     font-size: 48px;
     color: white;
     font-weight: strong;
+
+    padding: 0px;
+    margin: 0px;
 `
 
-export const ReturnModal = styled.ul`
-    width: 90%;
+export const ReturnModal = styled.div`
+    width: 50%;
 
     background: #000010;
     
     border-radius: 10px;
 
-    padding: 30px;
-    margin: 0 auto;
+    padding: 60px;
+    margin: 40px;
 `

@@ -12,28 +12,25 @@ function Form({ onData, CPFvalidate }) {
     const [pickedData, setPickedData] = useState({});
     
     const returnData = 
-    <>
-        <ReturnModal>
-            <li>Name: {pickedData.name}</li>
-            <li>Last Name: {pickedData.lastName}</li>
-            <li>Birth Date: {pickedData.birth}</li>
-            <li>E-mail: {pickedData.email}</li>
+    <ReturnModal>
+            <Text>Name: {pickedData.name}</Text>
+            <Text>Last Name: {pickedData.lastName}</Text>
+            <Text>Birth Date: {pickedData.birth}</Text>
+            <Text>E-mail: {pickedData.email}</Text>
 
-            <li>Area: {pickedData.area}</li>
-            <li>Available: {pickedData.available}</li>
-            <li>Nickname: {pickedData.nickname}</li>
+            <Text>Area: {pickedData.area}</Text>
+            <Text>Available: {pickedData.available}</Text>
+            <Text>Nickname: {pickedData.nickname}</Text>
 
-            <li>Phone: {pickedData.phone}</li>
-        </ReturnModal>
-    </>
+            <Text>Phone: {pickedData.phone}</Text>
+    </ReturnModal>
 
     const registered = 
     <FormArea>
         <Container>
-            <TitleText>thx for submit</TitleText>
-            <Text>{returnData}</Text>
-            <Text>So we are done?</Text>
-            <AButton href="/">Sure!</AButton>
+            <>{returnData}</>
+            <Text>So we are done?  <AButton href="/">Sure!</AButton></Text>
+            
         </Container>
     </FormArea>
 

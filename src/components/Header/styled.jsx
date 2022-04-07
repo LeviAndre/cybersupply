@@ -96,7 +96,9 @@ export const Btn2 = styled.a`
     background: none;
     border: none; 
 
-    padding: 0;
+    padding: 0px;
+    margin-left: 5px;
+    margin-right: 5px;
 
     &:hover {
         cursor: pointer;
