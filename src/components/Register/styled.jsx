@@ -51,13 +51,14 @@ export const Button = styled.button`
     color: #fff;
     font-size: 36px;
 
-    border-radius: 5px;
-    background: #000040;
+    background: none;
     border: none;
+    border-bottom: 2px white solid;
+    border-right: 2px white solid;
 
     position: absolute;
     top: 570px;
-    right: 710px;
+    right: 716px;
 
     padding: 5px;
     margin: 10px;
