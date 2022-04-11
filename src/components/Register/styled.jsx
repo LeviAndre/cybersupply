@@ -31,42 +31,64 @@ export const Container = styled.form`
 
 export const TextField = styled.input`
     font-family: 'Roboto Mono',  monospace;
-    font-size: 36px;
+    font-size: 28px;
     color: #fff;
 
-    height: 60px;
-    width: 60%;
+    height: 50px;
+    width: 100%;
 
     padding: 5px;
-    margin: 10px;
 
-    border-radius: 5px;
     border: none;
     background: #000040;
     
 `
 
+export const LabelArea = styled.div`
+    width: 60%;
+    margin: 10px;
+
+`
+
 export const Button = styled.button`
     font-family: 'Roboto Mono',  monospace;
     color: #fff;
-    font-size: 36px;
+    font-size: 28px;
 
     background: none;
     border: none;
-    border-bottom: 2px white solid;
-    border-right: 2px white solid;
+    border: 2px #007CFF solid;
 
     position: absolute;
-    top: 570px;
-    right: 716px;
+    top: 640px;
+    right: 694px;
 
-    padding: 5px;
+    padding: 8px;
     margin: 10px;
     
     width: 120px;
 
+    &:after {
+        content: "";
+        position: absolute;
+        content: "";
+        width: 0;
+        height: 100%;
+        top: 0;  
+        right: 0;
+        z-index: -1;
+        background: #007CFF;
+        transition: all 0.3s ease;
+    }
+
     &:hover {
         cursor: pointer;
+        background: #007CFF;
+        transition: all 0.3s ease;
+    }
+    &:hover:after {
+        left: 0;
+        width: 100%;
     }
 `
 
@@ -86,7 +108,7 @@ export const AButton = styled.a`
 export const Text = styled.p`
     font-family: 'Roboto Mono', monospace;
 
-    font-size: 24px;
+    font-size: 18px;
     color: white;
 
     padding: 10px;
@@ -113,4 +135,20 @@ export const ReturnModal = styled.div`
 
     padding: 60px;
     margin: 40px;
+`
+
+export const Check = styled.span`
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+
+    &:after {
+        content: "";
+        position: absolute;
+        display: none;
+    }
+    
 `

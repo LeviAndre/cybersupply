@@ -49,7 +49,7 @@ function resizeHeaderOnScroll() {
 
 function fixedHeader() {
     const location = window.location.pathname
-    headerEl = document.getElementById('head');
+    let headerEl = document.getElementById('head');
 
     if(location === '/register') {
         headerEl.classList.add("fixed");

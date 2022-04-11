@@ -16,7 +16,8 @@ function Banner() {
             <BannerContainer>
 
                 <GreatTitle src={name} className="writer"/>
-                <SubTitle>So your code <span
+                <SubTitle>So your code <span 
+                    style={{color: '#0AE300'}}
                     className="txt-rotate"
                     data-period="3500"
                     data-rotate='[ "fly higher.", "go further.", "get paid", "make noise?", 
@@ -102,7 +103,7 @@ var TxtRotate = function(el, toRotate, period) {
     // INJECT CSS
     var css = document.createElement("style");
     css.type = "text/css";
-    css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #E7CF00 }";
+    css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #0AE300 }";
     document.body.appendChild(css);
   };
 
