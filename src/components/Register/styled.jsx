@@ -17,6 +17,11 @@ export const FormArea = styled.div`
     align-items: center;
 `
 
+export const Options = styled.div`
+    display: flex;
+
+`
+
 export const Container = styled.form`
     padding: 10px;
 
@@ -45,9 +50,9 @@ export const TextField = styled.input`
 `
 
 export const LabelArea = styled.div`
+    min-height: 50px;
     width: 60%;
-    margin: 10px;
-
+    margin: 15px;
 `
 
 export const Button = styled.button`
@@ -59,14 +64,13 @@ export const Button = styled.button`
     border: none;
     border: 2px #007CFF solid;
 
-    position: absolute;
-    top: 640px;
-    right: 694px;
+    position: relative;
 
     padding: 8px;
-    margin: 10px;
+    margin-left: 10px;
     
     width: 120px;
+    height: 62px;
 
     &:after {
         content: "";
@@ -111,18 +115,18 @@ export const Text = styled.p`
     font-size: 18px;
     color: white;
 
-    padding: 10px;
+    padding: 7px;
     margin: 0px;
 `
 
 export const TitleText = styled.p`
     font-family: 'Roboto Mono', monospace;
 
-    font-size: 48px;
+    font-size: 24px;
     color: white;
-    font-weight: strong;
+    font-weight: bold;
 
-    padding: 0px;
+    padding-bottom: 25px;
     margin: 0px;
 `
 

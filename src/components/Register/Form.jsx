@@ -3,11 +3,11 @@ import AccountData from "./AccountData";
 import PersonalData from "./PersonalData"
 import ProfessionalData from "./ProfessionalData";
 
-import { BannerContainer } from "../Banner/styled.jsx";
+import { Stepper, Step, StepLabel } from "@material-ui/core";
 
-import { Container, Text, ReturnModal, TitleText, Button, AButton, FormArea } from "./styled.jsx";
+import { Container, Text, ReturnModal, AButton, FormArea } from "./styled.jsx";
 
-function Form({ onData, CPFvalidate }) {
+function Form({ onData }) {
     const [currentStage, setCurrentStage] = useState(0);
     const [pickedData, setPickedData] = useState({});
     
@@ -19,6 +19,7 @@ function Form({ onData, CPFvalidate }) {
             <Text>E-mail: {pickedData.email}</Text>
 
             <Text>Area: {pickedData.area}</Text>
+            <Text>Specialization: {pickedData.specialization}</Text>
             <Text>Available: {pickedData.available}</Text>
             <Text>Nickname: {pickedData.nickname}</Text>
 
@@ -52,7 +53,16 @@ function Form({ onData, CPFvalidate }) {
     }
 
 
-    return <>{currentForm[currentStage]}</>;
+    return (
+    <>
+        <Stepper activeStep={currentStage}>
+            <Step><StepLabel>Login</StepLabel></Step>
+            <Step><StepLabel>Pessoal</StepLabel></Step>
+            <Step><StepLabel>Entrega</StepLabel></Step>
+            <Step><StepLabel>Finalização</StepLabel></Step>
+        </Stepper>
+    {currentForm[currentStage]}
+    </>);
 
 }
 

@@ -61,7 +61,12 @@ function PersonalData({onData}) {
 
                 </LabelArea>
 
-                <Button>Next</Button>
+                <LabelArea style={{display: "flex", justifyContent: "flex-end", marginRight: "0px", marginTop: "30px"}}>
+
+                    <Button>Next</Button>
+
+                </LabelArea>
+            
             </Container>
         </FormArea>
     )
