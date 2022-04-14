@@ -1,7 +1,6 @@
 import { useState } from "react";
-import { BannerContainer } from "../Banner/styled.jsx";
 
-import { TextField, Button, Container, FormArea, Text, LabelArea, Check, Options, TitleText } from "./styled.jsx";
+import { TextField, Button, Container, FormArea, Text, LabelArea, Options, TitleText } from "./styled.jsx";
 
 function ProfessionalData({onData}) {
     const [area, setArea] = useState("");

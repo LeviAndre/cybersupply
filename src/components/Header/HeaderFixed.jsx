@@ -1,7 +1,5 @@
 import React, { Component } from "react";
 
-import "./animation.css"
-
 import { ContainerF, ContainerVisibility, P, Nav, Ul, Li, Btn, Btn2, Logo } from "./styled.jsx"
 
 import logo from "../../assets/img/logo.svg";

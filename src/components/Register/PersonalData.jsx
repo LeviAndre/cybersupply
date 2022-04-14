@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { BannerContainer } from "../Banner/styled.jsx";
 
 import { TextField, Button, Container, FormArea, LabelArea, Text } from "./styled.jsx";
 
@@ -15,7 +14,7 @@ function PersonalData({onData}) {
                 event.preventDefault();
                 onData({name, lastName, birth, email});
             }}>
-                <LabelArea style={{display: 'flex'}}>
+                <LabelArea style={{display: 'flex'}}> 
 
                     <div>
                     <Text>First Name</Text>

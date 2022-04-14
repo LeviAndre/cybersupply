@@ -1,14 +1,12 @@
 import { useState } from "react";
-import { BannerContainer } from "../Banner/styled.jsx";
-import Header from "../Header/Header.jsx";
-import { ContainerVisibility } from "../Header/styled.jsx";
 import { TextField, Button, Container, FormArea, LabelArea, Text } from "./styled.jsx";
 
 function AccountData({onData}) {
     const [phone, setPhone] = useState("");
     const [available, setAvailable] = useState("");
     const [password, setPassword] = useState("");
-    /*const [erros, setErros] = useState({ password: { passed: true, text: "" } }) adc valicadção*/
+    const [confPassword, setConfPassword] = useState("");
+    
     return (
         <FormArea>
 
@@ -44,7 +42,10 @@ function AccountData({onData}) {
 
                     <Text>Confirm Password</Text>
 
-                    <TextField type="password" required/>
+                    <TextField 
+                    value={confPassword}
+                    onChange={(event) =>{ setConfPassword(event.target.value)}}
+                    id="confPassword" type="confPassword" required/>
 
                 </LabelArea>
 
