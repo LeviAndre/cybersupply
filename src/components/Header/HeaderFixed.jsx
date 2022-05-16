@@ -1,4 +1,7 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
+
+import "./style.css"
 
 import { ContainerF, ContainerVisibility, P, Nav, Ul, Li, Btn, Btn2, Logo } from "./styled.jsx"
 
@@ -12,15 +15,15 @@ function HeaderFixed() {
 
             <Nav>
                 <Ul>
-                    <Li><Btn href="/">Home</Btn></Li>
-                    <Li><Btn href="#">About</Btn></Li>
-                    <Li><Btn href="#">Contact</Btn></Li>
+                    <Li><Link to="/" className="buttonStyle">Home</Link></Li>
+                    <Li><Link to="#" className="buttonStyle">About</Link></Li>
+                    <Li><Link to="#" className="buttonStyle">Contact</Link></Li>
                 </Ul>
 
                 <Ul>
-                    <Li><Btn2 href="#">Login</Btn2></Li>
+                    <Li><Link to="#" className="buttonSecondary">Login</Link></Li>
                     <Li><P>/</P></Li>
-                    <Li><Btn2 href="/register" > Register</Btn2></Li>
+                    <Li><Link to="/register" className="buttonSecondary"> Register</Link></Li>
                 </Ul>
             </Nav>
 

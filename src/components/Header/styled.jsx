@@ -34,6 +34,27 @@ export const ContainerVisibility = styled.div `
     z-index: 14;
 `
 
+export const AboutContainer = styled.div `
+    background: #000020;
+    opacity: 0;
+    width: 50%
+    position: absolute;
+    padding: 20px;
+`
+
+export const Title = styled.p `
+    font-family: 'Roboto Mono', monospace;
+    color: white; 
+    font-size: 22px;
+    font-weight: strong;
+`
+
+export const Text = styled.p `
+font-family: 'Roboto Mono', monospace;
+color: white; 
+font-size: 18px;
+`
+
 export const P = styled.p`
     font-family: 'Roboto Mono', monospace;
     color: white;
@@ -68,41 +89,6 @@ export const Li = styled.li`
     margin-top: 0px;
     margin-right: 10px;
     padding: 0px;
-`
-
-export const Btn = styled.a`
-    font-family: 'Roboto Mono', monospace;
-    text-decoration-line: none;
-    color: white;
-    font-size: 22px;
-
-    background: none;
-    border: none; 
-
-    padding: 0px 30px 40px 30px;
-
-    &:hover {
-        border-bottom: 6px white solid;
-        cursor: pointer;
-    }
-`
-
-export const Btn2 = styled.a`
-    font-family: 'Roboto Mono', monospace;
-    text-decoration-line: none;
-    color: white;
-    font-size: 22px;
-
-    background: none;
-    border: none; 
-
-    padding: 0px;
-    padding-left: 10px;
-    margin: 0px;
-
-    &:hover {
-        cursor: pointer;
-    }
 `
 
 export const Logo = styled.img`

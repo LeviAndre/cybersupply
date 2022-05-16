@@ -15,13 +15,13 @@ function Banner() {
         return (
             <BannerContainer>
 
-                <GreatTitle src={name} className="writer"/>
+                <GreatTitle src={name} className="writer" id="banner"/>
                 <SubTitle>So your code <span 
                     style={{color: '#0AE300'}}
                     className="txt-rotate"
                     data-period="3500"
-                    data-rotate='[ "fly higher.", "go further.", "get paid", "make noise?", 
-                                   "fly HIGHER!" ]'> </span></SubTitle>
+                    data-rotate='[ "{fly higher.}", "{go further.}", "{get paid}", "{make noise?}", 
+                                   "{fly HIGHER!}" ]'> </span></SubTitle>
                 <Gradient></Gradient>
 
                 <FirstCode className="layer" data-speed="9" src={consoleLog}/>
@@ -90,7 +90,8 @@ var TxtRotate = function(el, toRotate, period) {
       that.tick();
     }, delta);
   };
-  
+
+  // Gotta solve this
   window.onload = function() {
     var elements = document.getElementsByClassName('txt-rotate');
     for (var i=0; i<elements.length; i++) {
