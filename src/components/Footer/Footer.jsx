@@ -1,3 +1,10 @@
+import twitter from "../../assets/img/twitter.svg";
+import facebook from "../../assets/img/facebook.svg";
+import instagram from "../../assets/img/instagram.svg";
+import logo from "../../assets/img/logo.svg";
+import email from "../../assets/img/email.svg";
+import phone from "../../assets/img/phone.svg";
+
 import {    Container, 
             Item, 
             Title, 
@@ -7,13 +14,6 @@ import {    Container,
             Divisor,
             CreditName,
             CreditTitle } from "./styled.jsx"
-
-import twitter from "../../assets/img/twitter.svg";
-import facebook from "../../assets/img/facebook.svg";
-import instagram from "../../assets/img/instagram.svg";
-import logo from "../../assets/img/logo.svg";
-import email from "../../assets/img/email.svg";
-import phone from "../../assets/img/phone.svg";
 
 function Footer() {
     return (

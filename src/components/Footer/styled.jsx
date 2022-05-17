@@ -14,7 +14,6 @@ export const Container = styled.div`
 `
 
 export const Item = styled.div`
-
     width-max: 10%;
     height: 10em;
 

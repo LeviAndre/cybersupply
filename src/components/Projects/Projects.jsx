@@ -1,12 +1,34 @@
-import { Container } from "./styled.jsx"
+import Carousel from "./Carousel";
+
+import { Container, Item } from "./styled.jsx"
 
 function Projects() {
     return (
-        <Container>
 
-            
+        <>
+            <Carousel />
 
-        <Container/>
+            <Container>
+                
+                <Item></Item>
+                <Item></Item>
+                <Item></Item>
+                <Item></Item>
+                <Item></Item>
+                <Item></Item>
+                <Item></Item>
+                <Item></Item>
+                <Item></Item>
+                <Item></Item>
+                <Item></Item>
+                <Item></Item>
+                <Item></Item>
+                <Item></Item>
+                <Item></Item>
+                <Item></Item>
+
+            </Container>
+        </>
     )
 }
 

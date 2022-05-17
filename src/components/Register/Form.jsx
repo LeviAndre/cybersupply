@@ -5,6 +5,7 @@ import ProfessionalData from "./ProfessionalData";
 import * as yup from 'yup';
 
 import { Container, Text, ReturnModal, AButton, FormArea } from "./styled.jsx";
+import { BannerContainer } from "../Banner/styled.jsx" 
 
 function Form({ onData }) {
     const [currentStage, setCurrentStage] = useState(0);
@@ -108,9 +109,9 @@ function Form({ onData }) {
     }
 
     return (
-    <>
+    <BannerContainer>
     {currentForm[currentStage]}
-    </>);
+    </BannerContainer>);
 
 }
 

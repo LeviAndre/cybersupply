@@ -2,13 +2,13 @@ import styled from "styled-components";
 
 export const FormArea = styled.div`
     max-width: 40%;
-    min-height: 860px;
+    min-height: 1000px;
     max-height: 1180px;
 
     margin: 0 auto;
 
     background: #000020;
-    opacity: 90%;
+    opacity: 95%;
 
     display: flex;
     justify-content: center;
@@ -64,11 +64,11 @@ export const Button = styled.button`
 
     position: relative;
 
-    padding: 8px;
+    padding: 5px;
     margin-left: 10px;
     
-    width: 120px;
-    height: 62px;
+    width: 110px;
+    height: 58px;
 
     &:after {
         content: "";
@@ -80,7 +80,7 @@ export const Button = styled.button`
         right: 0;
         z-index: -1;
         background: #007CFF;
-        transition: all 0.3s ease;
+        transition: all 0.1s ease;
     }
 
     &:hover {
