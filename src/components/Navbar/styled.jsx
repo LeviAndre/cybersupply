@@ -95,7 +95,6 @@ export const Logo = styled.img`
     margin: 12px 100px 40px 170px;
 
     width: 160px;
-    height: 90px;
 
     z-index: 15;
 `

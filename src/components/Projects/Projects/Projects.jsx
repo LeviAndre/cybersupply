@@ -1,6 +1,6 @@
-import Carousel from "./Carousel";
+import Carousel from "../Carousel/Carousel";
 
-import { Container, Item } from "./styled.jsx"
+import { Container, Item } from "../Carousel/styled.jsx"
 
 function Projects() {
     return (

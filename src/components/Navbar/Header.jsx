@@ -16,11 +16,11 @@ function Header() {
 
             <ContainerVisibility id="head"/>
 
-            <Logo src={logo} alt="Cyber Supply"/>
+            <Logo className="col-1" src={logo} alt="Cyber Supply"/>
 
             <Nav>
                 <Ul>
-                    <Li><Link to="/" className="buttonStyle">Home</Link></Li>
+                    <Li><Link to="/" className="fs-16 buttonStyle">Home</Link></Li>
                     <Li><Link to="#" className="buttonStyle">About</Link></Li>
                     <Li><Link to="#" className="buttonStyle">Contact</Link></Li>
                 </Ul>

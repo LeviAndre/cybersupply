@@ -73,7 +73,7 @@ export const List = styled.ul`
 `
 
 export const SubTitle2 = styled.button`
-    font-size: 18px;
+    font-size: 16px;
     color: white;    
     font-family: 'Roboto Mono', monospace;
 
@@ -90,8 +90,7 @@ export const SubTitle2 = styled.button`
 `
 
 export const Icon = styled.img`
-    width: 22px;
-    height: 22px;
+    width: 20px;
 
     padding: 0px;
     padding-right: 5px;

@@ -17,7 +17,7 @@ export const GreatTitle = styled.img`
 export const SubTitle = styled.h3`
     font-family: 'Roboto Mono', monospace;
     color: #fefefe;
-    font-size: 64px;
+    font-size: 48px;
 
     position: absolute;
     top: 420px;

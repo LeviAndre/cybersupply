@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 
+//TODO; limpar o css do componente Carousel
+
 export const Container = styled.div`
     margin: 0 100px 0 135px;
     display: flex;
