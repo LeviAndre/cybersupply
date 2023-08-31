@@ -1,6 +1,8 @@
 import { useState } from "react";
 
-import { TextField, Button, Container, FormArea, LabelArea, Text } from "./styled.jsx";
+import { TextField, Container, FormArea, LabelArea, Text } from "./styled.jsx";
+
+import { Button } from "../../geralStyle.jsx"
 
 function PersonalData({onData}) {
     const [name, setName] = useState("");

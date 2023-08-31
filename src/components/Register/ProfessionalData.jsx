@@ -1,6 +1,8 @@
 import { useState } from "react";
 
-import { TextField, Button, Container, FormArea, Text, LabelArea, Options, TitleText } from "./styled.jsx";
+import { TextField, Container, FormArea, Text, LabelArea, Options, TitleText } from "./styled.jsx";
+
+import { Button } from "../../geralStyle.jsx"
 
 function ProfessionalData({onData}) {
     const [area, setArea] = useState("");

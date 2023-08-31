@@ -53,47 +53,6 @@ export const LabelArea = styled.div`
     margin: 15px;
 `
 
-export const Button = styled.button`
-    font-family: 'Roboto Mono',  monospace;
-    color: #fff;
-    font-size: 28px;
-
-    background: none;
-    border: none;
-    border: 2px #007CFF solid;
-
-    position: relative;
-
-    padding: 5px;
-    margin-left: 10px;
-    
-    width: 110px;
-    height: 58px;
-
-    &:after {
-        content: "";
-        position: absolute;
-        content: "";
-        width: 0;
-        height: 100%;
-        top: 0;  
-        right: 0;
-        z-index: -1;
-        background: #007CFF;
-        transition: all 0.1s ease;
-    }
-
-    &:hover {
-        cursor: pointer;
-        background: #007CFF;
-        transition: all 0.3s ease;
-    }
-    &:hover:after {
-        left: 0;
-        width: 100%;
-    }
-`
-
 export const AButton = styled.a`
     font-family: 'Roboto Mono',  monospace;
     color: #fff;
